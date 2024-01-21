@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<>
 <head>
-    <meta charset='utf-8'>
-    <title>英単語レベル</title>
-    <script>function getlevel(){
-        if(document.getElementById('word').value == "yuki"){document.cookie = "yuki=True; path=/;";location.href="/";}else{
-        let req = new XMLHttpRequest();
-        req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
-        req.open("GET", "/answer?q="+document.getElementById('word').value);
-        req.send();}
-    }</script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "kbwgtmi4yf");
-</script>
-</head>
-    英単語のレベルを出します。<br>
-    その単語が文脈から判断するべき単語か、覚えておくべき単語かの参考にしてください。<br>
-    <input id="word" type="text"></input><input type="button" onClick="getlevel()">確認</input>
-    <div id="info">
-    <div id="adspace">
-‎<p>アクセス数:</p><!-- FC2カウンター ここから -->
-<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89505886"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89505886" /></noscript>
-<!-- FC2カウンター ここまで --><!-- FC2カウンター ここから -->
-同時接続数:<script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=89505886"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=89505886" /></noscript>
-<!-- FC2カウンター ここまで -->
-‎</div>
-‎<script>
-window.onload = () => {
-  const adspace = document.querySelector('#adspace');
-  if( adspace.clientHeight === 0 ){
-    alert('アクセスカウンター、または同時接続数が表示されていません。ad blockerをインストールしている場合表示されない場合があります。');
-  }
+<title>♡TAMAMU♡</title>
+<script>
+function getlevel(){
+if(document.getElementById('word').value == "tomoyo"){
+document.cookie = "yuki=True; path=/;";
 }
-‎</script>
-
+}
+</script>
+<style type="text/css">
+h1 {color:#20b2aa ;
+font-family: cursive;
+font-size:50px;
+margin-top:10px;
+margin-bottom:0px
+}
+h2 {color:#ffa07a;
+background-color:#77776c;
+ display:  inline-block;
+ border-radius:  8px;       
+padding:5px;
+margin-bottom:5px;
+font-size:35px;
+    }
+h3{font-size:25px;
+margin-top:0px;
+margin-bottom:0px;
+    }
+body {
+background-color: #faebd7;
+padding: 0px 25px 20px 25px; 
+}
+p{font-size:75px;
+margin-top:5px;
+margin-bottom:5px;
+ display: inline-block;
+  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
+  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+</style>
+</head>
+<h1>TAMAMU-CLUB</h1>
+<h2>TAMAMU-CLUBとは</h2>
+<h3>TAMAMU-CLUBとは,2018年に設立されたTAMAMUと呼ばれる音楽の神を崇め称えるもの<br>である。</h3>
+<h2>活動内容</h2>
+<h3>1. 崇拝の集会：定期的に崇める対象となる人物を囲んで集まり、共に祈りや称えの儀式を行<br>います。参加者は崇拝の対象に関する話題や感謝の気持ちを共有し、絆を深めます。<br>
+2. 崇める対象の功績の研究：崇拝の対象となる人物の功績や人生に関する研究を行います。<br>彼女の達成や影響力について深く理解し、その啓示を自身の人生に取り入れるための学びを<br>得ます。<br>
+3. 崇める対象への奉仕活動：崇める対象に奉仕する活動を計画し、その実行を通じて自身の<br>思いやりや奉仕の心を育てます。例えば、彼女の関心事に関連する慈善活動を企画したり、<br>彼女が立ち上げた団体のボランティアとして参加したりすることが考えられます。<br>
+4. 信奉者コミュニティの設立：崇拝の対象を共有する人々を集め、コミュニティを形成しま<br>す。メンバー同士の交流や情報共有を通じて、彼女に対する共感や理解を深めると同時に、<br>仲間との絆を築きます。
+</h3>
+<h2>加入方法</h2>
+<h3>一日三回づつ三人以上の人の前で</h3>
+<p>T・A・M・A・M・U...TAMAMU!!<p>
+<h3>と唱えましょう。<br>それを続けている間はあなたの心の中にTAMAMUは宿ります</h3>
+<input id="word" type="text"></input><input type="button" onClick="getlevel()">←質問等</input>
+<div id="info">
 </body>
 </html>
