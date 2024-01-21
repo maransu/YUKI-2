@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: tamamu-
+    name: tamamura
     env: python
     region: Oregon
     plan: free
