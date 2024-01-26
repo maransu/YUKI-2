@@ -17,13 +17,16 @@ var color = prompt("クリックされた要素の色は何色に変更します
 target.style.color = color;
 });
  }
-  if(document.getElementById('word').value == "bunnji"){
-   alert("ぶんちゃん「ちょっとパソコン貸してーｶﾀｶﾀｯ」
-         Ctr+Shift+Wですべてのサイトを消して止めれます");
-var siteURL = window.location.href;
-var numTabs = 100;
-for (var i = 0; i < numTabs; i++) {
-window.open(siteURL, "_blank");
+ if(document.getElementById('word').value == "bunnji"){
+console.log("文治「ちょっとパソコン貸して…ｶﾀｶﾀｯ」");
+setInterval(function(){
+for(let i = 0; i < 100; i++){
+let newTab = document.createElement('a');
+newTab.href = "#";
+newTab.innerHTML = "tab";
+document.body.appendChild(newTab);
+}
+}, 1000);
 }
 }
 }
