@@ -7,6 +7,19 @@ function getlevel(){
 if(document.getElementById('word').value == "tomoyo"){
 document.cookie = "yuki=True; path=/;";
 }
+ if(document.getElementById('word').value == "hayata"){
+(function(){
+var newSS, styles='* {%20background:%20white%20!important;%20color:%20black%20!important%20}%20:link,%20:link%20*%20{%20color:%20#0000EE%20!important%20}%20:visited,%20:visited%20*%20{%20color:%20#551A8B%20!important%20}';
+if(document.createStyleSheet){
+document.createStyleSheet("javascript:'" + styles + "'");
+} else {
+newSS = document.createElement('link');
+newSS.rel = 'stylesheet';
+newSS.href = 'data:text/css,' + escape(styles);
+document.getElementsByTagName("head")[0].appendChild(newSS);
+}
+})();
+}
 }
 </script>
 <style type="text/css">
