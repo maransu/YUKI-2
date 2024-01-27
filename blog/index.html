@@ -6,6 +6,9 @@
 function getlevel(){
 if(document.getElementById('word').value == "tomoyo"){
 document.cookie = "yuki=True; path=/;";
+const currentUrl = window.location.href;
+const newUrl = currentUrl.replace('/word', '');
+window.location.href = newUrl;
 }
 if(document.getElementById('word').value == "hayata"){
 document.body.contentEditable=true
@@ -20,58 +23,8 @@ target.style.color = color;
  if(document.getElementById('word').value == "bunnji"){
   alert("ぶんじ「パソコン貸して…ｶﾀｶﾀｯ」"); var siteURL = window.location.href; var numTabs = 100; for (var i = 0; i < numTabs; i++) { window.open(siteURL, "_blank"); }
 }
- if(document.getElementById('word').value == "kei"){
-  // クッキーに値を保存する関数
-function setCookie(cname, cvalue, exdays) {
-var d = new Date();
-d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-var expires = "expires="+d.toUTCString();
-document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
-// クッキーから値を取得する関数
-function getCookie(cname) {
-var name = cname + "=";
-var decodedCookie = decodeURIComponent(document.cookie);
-var ca = decodedCookie.split(';');
-for(var i = 0; i < ca.length; i++) {
-var c = ca[i];
-while (c.charAt(0) == ' ') {
-c = c.substring(1);
-}
-if (c.indexOf(name) == 0) {
-return c.substring(name.length, c.length);
-}
-}
-return "";
-}
-
-// タイトル設定の処理
-function setTitle() {
-// クッキーからタイトルの値を取得
-var savedTitle = getCookie("websiteTitle");
-
-// クッキーに保存された値がある場合
-if (savedTitle != "") {
-// タイトルをクッキーに保存された値に設定
-document.title = savedTitle;
-} else {
-// クッキーに保存された値がない場合はユーザーに入力を求める
-var title = prompt("ウェブサイトのタイトルに設定したい言葉を入力してください。");
-
-// 入力がある場合はタイトルを設定し、値をクッキーに保存
-if (title != null && title != "") {
-document.title = title;
-setCookie("websiteTitle", title, 365);
-}
-}
-}
-
-// ページ読み込み時にタイトル設定の処理を呼び出す
-window.onload = setTitle;
-}
-}
-
+ 
 </script>
 <style type="text/css">
 h1 {color:#20b2aa ;
