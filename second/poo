@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6128618236380905"
+     crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  <div class="animated-lines">
+    <!-- Generate multiple animated lines with random positions and animations -->
+    <script>
+      for (let i = 0; i < 100; i++) {
+        const delay = Math.random() * 8; // Random delay for animation start
+        const duration = Math.random() * 10 + 5; // Random duration between 5 and 15 seconds
+        const position = Math.random() * 100; // Random position between 0 and 100%
+        const line = document.createElement('div');
+        line.classList.add('animated-line');
+        line.style.left = `${position}%`;
+        line.style.animation = `move-line ${duration}s linear ${delay}s infinite`;
+        document.querySelector('.animated-lines').appendChild(line);
+      }
+    </script>
+  </div>
 
+  <div class="container">
+    <h1>about:blank</h1>
+    <h2 class="input-label">URLを入力してください</h2>
+    <input
+      type="text"
+      class="input-field"
+      placeholder="https://を含むリンクを入力"
+    />
+    <button class="submit-btn">埋め込む</button>
+  </div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-icon"></div>
+    <div class="loading-text">Loading...</div>
+  </div>
+
+  <script>
+    (function () {
+      var inputField = document.querySelector(".input-field");
+      var submitBtn = document.querySelector(".submit-btn");
+      var loadingScreen = document.querySelector(".loading-screen");
+
+      submitBtn.textContent = "埋め込む";
+
+      submitBtn.addEventListener("click", function () {
+        var url = inputField.value;
+
+        if (url === '') {
+          url = "https://abcde.firstimage.biz/";
+        }
+
+        // Show loading screen on button click
+        loadingScreen.style.opacity = "1";
+        loadingScreen.style.pointerEvents = "all";
+
+        // Simulate a 4-second delay for loading the iframe
+        setTimeout(function () {
+          var win = window.open();
+          win.document.body.style.margin = "0";
+          win.document.body.style.height = "100vh";
+
+          var iframe = win.document.createElement("iframe");
+          iframe.style.border = "none";
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          iframe.style.margin = "0";
+          iframe.referrerpolicy = "no-referrer";
+          iframe.allow = "fullscreen";
+          iframe.src = url.toString();
+          win.document.body.appendChild(iframe);
+
+          // Hide loading screen after the iframe loads
+          setTimeout(function () {
+            loadingScreen.style.opacity = "0";
+            loadingScreen.style.pointerEvents = "none";
+          }, 1000); // Adjust the delay as needed
+        }, 3000); // Adjust the loading time as needed
+      });
+    })();
+  </script>
+</body>
+</html>
