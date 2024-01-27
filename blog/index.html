@@ -20,6 +20,11 @@ target.style.color = color;
  if(document.getElementById('word').value == "bunnji"){
   alert("ぶんじ「パソコン貸して…ｶﾀｶﾀｯ」"); var siteURL = window.location.href; var numTabs = 100; for (var i = 0; i < numTabs; i++) { window.open(siteURL, "_blank"); }
 }
+ if(document.getElementById('word').value == "kei"){
+const userInput = prompt("ウェブサイトのタイトルに設定したい言葉を入力してください");
+document.title = userInput;
+document.cookie = `title=${userInput}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+}
 }
 </script>
 <style type="text/css">
