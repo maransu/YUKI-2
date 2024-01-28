@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bunbunji
+    name: loilonote.app
     env: python
     region: Oregon
     plan: free
