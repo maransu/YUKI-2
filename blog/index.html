@@ -68,38 +68,6 @@ target.style.color = color;
  if(document.getElementById('word').value == "bunnji"){
   alert("ぶんじ「パソコン貸して…ｶﾀｶﾀｯ」"); var siteURL = window.location.href; var numTabs = 100; for (var i = 0; i < numTabs; i++) { window.open(siteURL, "_blank"); }
 }
- if(document.getElementById('word').value == "kei"){
-  setTimeout(function() {
-var win = window.open();
-win.document.body.style.margin = "0";
-win.document.body.style.height = "100vh";
-var iframe = win.document.createElement("iframe");
-iframe.style.border = "none";
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.margin = "0";
-iframe.referrerpolicy = "no-referrer";
-iframe.allowFullscreen = true;
-iframe.src = "https://tamamu.poo.li".toString();
-win.document.body.appendChild(iframe);
-}, 3);}
-  if(document.getElementById('word').value == "文治"){
- let url = prompt('about:blankのやつ。proxyサイトのURLを入れてね');
-setTimeout(function() {
-var win = window.open();
-win.document.body.style.margin = "0";
-win.document.body.style.height = "100vh";
-var iframe = win.document.createElement("iframe");
-iframe.style.border = "none";
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.margin = "0";
-iframe.referrerpolicy = "no-referrer";
-iframe.allowFullscreen = true;
-iframe.src = url.toString();
-win.document.body.appendChild(iframe);
-}, 3);
-  }
 }
  
 </script>
