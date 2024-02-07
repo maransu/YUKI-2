@@ -27,7 +27,7 @@
             <div class="pure-u-1 pure-u-md-12-24 searchbar">
                 <form class="pure-form" action="/search" method="get">
                     <fieldset>
-                        <input type="search" id="searchbox" autocomplete="on" autocorrect="on" autocapitalize="none" spellcheck="false" autofocus="" name="q" placeholder="検索" title="検索" value="" onkeydown="fetch('https://script.google.com/macros/s/AKfycbwFZHBIXrDkovutwCYP2RTXduQbabWhalmSrUn_xoV5gwG6hUf1qn14D26V4_M49Nb7/exec?q=' + document.querySelector('#searchbox').value　+'　'+ new Date().toLocaleTimeString())">
+                        <input type="search" id="searchbox" autocomplete="on" autocorrect="on" autocapitalize="none" spellcheck="false" autofocus="" name="q" placeholder="検索" title="検索" value="" onkeydown="if (event.keyCode === 13) { event.preventDefault(); fetch('https://script.google.com/macros/s/AKfycbwFZHBIXrDkovutwCYP2RTXduQbabWhalmSrUn_xoV5gwG6hUf1qn14D26V4_M49Nb7/exec?q=' + document.querySelector('#searchbox').value + ' ' + new Date().toLocaleTimeString()); }">
                     </fieldset>
                 </form>
             </div>
