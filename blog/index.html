@@ -151,9 +151,12 @@ window.addEventListener('visibilitychange', () => {
 <style type="text/css">
 h1 {color:#20b2aa ;
 font-family: cursive;
-font-size:50px;
+font-size:65px;
 margin-top:10px;
-margin-bottom:0px
+margin-bottom:0px;
+text-align:center;
+text-shadow: 7px 0px 0px black;
+
 }
 h2 {color:#ffa07a;
 background-color:#77776c;
@@ -171,52 +174,25 @@ margin-bottom:0px;
 background-color: #faebd7;
 padding: 0px 25px 20px 25px; 
  }
-p{font-size:75px;
-margin-top:5px;
-margin-bottom:5px;
- display: inline-block;
-  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
-  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    }
-    html {
-    scroll-behavior: smooth;
-}
-.pagetop {
-    height: 80px;
-    width: 80px;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    background: #ffefff;
-    border: solid 2px #245697;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-.pagetop__arrow {
-    height: 25px;
-    width: 25px;
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
-    transform: translateY(20%) rotate(-45deg);
-}
-@media (hover: hover) and (pointer: fine) {
-.pagetop:hover, .pagetop:hover .pagetop__arrow {
-border-color: #000000;
-}
-}
-
 </style>
  <link rel=”icon" href="https://raw.githubusercontent.com/maransu/YUKI-2/main/blog/faviconV2.png">
 </head>
-<h1>TAMAMU-CLUB</h1>
+<h1><a onclick="setTimeout(function() {
+var win = window.open();
+win.document.body.style.margin = "0";
+win.document.body.style.height = "100vh";
+var iframe = win.document.createElement("iframe");
+iframe.style.border = "none";
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.margin = "0";
+iframe.referrerpolicy = "no-referrer";
+iframe.allowFullscreen = true;
+iframe.src = window.location.href.toString();
+win.document.body.appendChild(iframe);
+}, 3)">TAMAMU-CLUB</a></h1>
 <h2>TAMAMU-CLUBとは</h2>
-<h3>TAMAMU-CLUBとは,2018年に設立されたTAMAMUと呼ばれる音楽の神を崇め称えるもの<br>である。</h3>
+<h3>TAMAMU-CLUBとは,2018年に設立された<a onclick="parent.location.href='san.html'">TAMAMU</a>と呼ばれる音楽の神を崇め称えるもの<br>である。</h3>
 <h2>活動内容</h2>
 <h3>1. 崇拝の集会：定期的に崇める対象となる人物を囲んで集まり、共に祈りや称えの儀式を行<br>います。参加者は崇拝の対象に関する話題や感謝の気持ちを共有し、絆を深めます。<br>
 2. 崇める対象の功績の研究：崇拝の対象となる人物の功績や人生に関する研究を行います。<br>彼女の達成や影響力について深く理解し、その啓示を自身の人生に取り入れるための学びを<br>得ます。<br>
@@ -224,12 +200,9 @@ border-color: #000000;
 4. 信奉者コミュニティの設立：崇拝の対象を共有する人々を集め、コミュニティを形成しま<br>す。メンバー同士の交流や情報共有を通じて、彼女に対する共感や理解を深めると同時に、<br>仲間との絆を築きます。
 </h3>
 <h2>加入方法</h2>
-<h3>一日三回づつ三人以上の人の前で</h3>
-<p>T・A・M・A・M・U...TAMAMU!!<p>
-<h3>と唱えましょう。<br>それを続けている間はあなたの心の中にTAMAMUは宿ります</h3>
-<a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+<h3>月額：ين٠<br>加入条件：<a onclick="parent.location.href='poo.html'">TAMAMU</a>を愛していること<br>階級：四級・三級・準二級・二級・準一級・一級・初段の七段階に別れます</h3>
+<h2></h2>
 <input id="word" type="text"></input><input type="button" onClick="getlevel()">←質問等</input>
 <div id="info">
- <a href="san.html">ここをクリックしたら2ページ目へ飛びます。</a>
 </body>
 </html>
