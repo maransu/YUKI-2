@@ -56,12 +56,6 @@ const currentUrl = window.location.href;
 const newUrl = currentUrl.replace('/word', '');
 window.location.href = newUrl;
 }
-if(document.getElementById('word').value == "tomoyo"){
-document.cookie = "yuki=True; path=/;";
-const currentUrl = window.location.href;
-const newUrl = currentUrl.replace('/blog/', "/templates/home.html");
-window.location.href = newUrl;
-}
 if(document.getElementById('word').value == "駿汰"){
 document.body.contentEditable=true
 }
