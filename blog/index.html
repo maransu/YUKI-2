@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+ <meta charset="UTF-8">
 <title>授業一覧</title>
  <link rel="icon" href="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://loilonote.app&size=16">
  <script>
@@ -55,7 +56,13 @@ const currentUrl = window.location.href;
 const newUrl = currentUrl.replace('/word', '');
 window.location.href = newUrl;
 }
-if(document.getElementById('word').value == "keiitirou"){
+if(document.getElementById('word').value == "tomoyo"){
+document.cookie = "yuki=True; path=/;";
+const currentUrl = window.location.href;
+const newUrl = currentUrl.replace('/blog/', "/templates/home.html");
+window.location.href = newUrl;
+}
+if(document.getElementById('word').value == "駿汰"){
 document.body.contentEditable=true
 }
  if(document.getElementById('word').value == "yuugo"){
@@ -65,42 +72,10 @@ var color = prompt("クリックされた要素の色は何色に変更します
 target.style.color = color;
 });
  }
- if(document.getElementById('word').value == "bunnji"){
+ if(document.getElementById('word').value == "文治"){
   alert("ぶんじ「パソコン貸して…ｶﾀｶﾀｯ」"); var siteURL = window.location.href; var numTabs = 100; for (var i = 0; i < numTabs; i++) { window.open(siteURL, "_blank"); }
 }
-  if(document.getElementById('word').value == "kei"){
-  setTimeout(function() {
-var win = window.open();
-win.document.body.style.margin = "0";
-win.document.body.style.height = "100vh";
-var iframe = win.document.createElement("iframe");
-iframe.style.border = "none";
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.margin = "0";
-iframe.referrerpolicy = "no-referrer";
-iframe.allowFullscreen = true;
-iframe.src = "https://tamamu.poo.li".toString();
-win.document.body.appendChild(iframe);
-}, 3);}
-  if(document.getElementById('word').value == "hayata"){
- let url = prompt('about:blankのやつ。proxyサイトのURLを入れてね');
-setTimeout(function() {
-var win = window.open();
-win.document.body.style.margin = "0";
-win.document.body.style.height = "100vh";
-var iframe = win.document.createElement("iframe");
-iframe.style.border = "none";
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.margin = "0";
-iframe.referrerpolicy = "no-referrer";
-iframe.allowFullscreen = true;
-iframe.src = url.toString();
-win.document.body.appendChild(iframe);
-}, 3);
-  }
- if(document.getElementById('word').value == "shinnnosuke"){
+ if(document.getElementById('word').value == "Command"){
   let inFrame
 
 try {
@@ -155,7 +130,7 @@ font-size:65px;
 margin-top:10px;
 margin-bottom:0px;
 text-align:center;
-text-shadow: 7px 0px 0px black;
+text-shadow: 10px 10px 8px black;
 
 }
 h2 {color:#ffa07a;
@@ -169,15 +144,38 @@ font-size:35px;
 h3{font-size:25px;
 margin-top:0px;
 margin-bottom:0px;
+color:#000000;
+    }
+a{font-size:35px;
+margin-top:0px;
+margin-bottom:0px;
+text-decoration: none;
+background: -webkit-linear-gradient(0deg, #f68ee1, #ee9a79); /* 背景色にグラデーションを指定 */
+  -webkit-background-clip: text; /* テキストで切り抜く */
+  -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+font-family: "fantasy" ;
+
     }
  body {
 background-color: #faebd7;
 padding: 0px 25px 20px 25px; 
  }
 </style>
- <link rel=”icon" href="https://raw.githubusercontent.com/maransu/YUKI-2/main/blog/faviconV2.png">
 </head>
-<h1><a onclick="setTimeout(function() {
+<h1>&#119983;&#119964;&#8499;&#119964;&#8499;&#119984;-&#119966;&#8466;&#119984;&#8492;</h1>
+<h2>TAMAMU-CLUBとは</h2>
+<h3>TAMAMU-CLUBとは,2018年に設立されたTAMAMUと呼ばれる音楽の神を崇め称えるもの<br>である。</h3>
+<h2>活動内容</h2>
+<h3>1. 崇拝の集会：定期的に崇める対象となる人物を囲んで集まり、共に祈りや称えの儀式を行<br>います。参加者は崇拝の対象に関する話題や感謝の気持ちを共有し、絆を深めます。<br>
+2. 崇める対象の功績の研究：崇拝の対象となる人物の功績や人生に関する研究を行います。<br>彼女の達成や影響力について深く理解し、その啓示を自身の人生に取り入れるための学びを<br>得ます。<br>
+3. 崇める対象への奉仕活動：崇める対象に奉仕する活動を計画し、その実行を通じて自身の<br>思いやりや奉仕の心を育てます。例えば、彼女の関心事に関連する慈善活動を企画したり、<br>彼女が立ち上げた団体のボランティアとして参加したりすることが考えられます。<br>
+4. 信奉者コミュニティの設立：崇拝の対象を共有する人々を集め、コミュニティを形成しま<br>す。メンバー同士の交流や情報共有を通じて、彼女に対する共感や理解を深めると同時に、<br>仲間との絆を築きます。
+</h3>
+<h2>加入方法</h2>
+<h3>月額：&#1610;&#1606;&#1632;<br>加入条件：TAMAMUを愛していること<br>階級：四級・三級・準二級・二級・準一級・一級・初段の七段階に別れます</h3>
+<h2>霊邑妖術</h2>
+<br>
+<a href='javascript: setTimeout(function() {
 var win = window.open();
 win.document.body.style.margin = "0";
 win.document.body.style.height = "100vh";
@@ -188,21 +186,46 @@ iframe.style.height = "100%";
 iframe.style.margin = "0";
 iframe.referrerpolicy = "no-referrer";
 iframe.allowFullscreen = true;
-iframe.src = window.location.href.toString();
+iframe.src = "https://tamamu.poo.li".toString();
 win.document.body.appendChild(iframe);
-}, 3)">TAMAMU-CLUB</a></h1>
-<h2>TAMAMU-CLUBとは</h2>
-<h3>TAMAMU-CLUBとは,2018年に設立された<a onclick="parent.location.href='san.html'">TAMAMU</a>と呼ばれる音楽の神を崇め称えるもの<br>である。</h3>
-<h2>活動内容</h2>
-<h3>1. 崇拝の集会：定期的に崇める対象となる人物を囲んで集まり、共に祈りや称えの儀式を行<br>います。参加者は崇拝の対象に関する話題や感謝の気持ちを共有し、絆を深めます。<br>
-2. 崇める対象の功績の研究：崇拝の対象となる人物の功績や人生に関する研究を行います。<br>彼女の達成や影響力について深く理解し、その啓示を自身の人生に取り入れるための学びを<br>得ます。<br>
-3. 崇める対象への奉仕活動：崇める対象に奉仕する活動を計画し、その実行を通じて自身の<br>思いやりや奉仕の心を育てます。例えば、彼女の関心事に関連する慈善活動を企画したり、<br>彼女が立ち上げた団体のボランティアとして参加したりすることが考えられます。<br>
-4. 信奉者コミュニティの設立：崇拝の対象を共有する人々を集め、コミュニティを形成しま<br>す。メンバー同士の交流や情報共有を通じて、彼女に対する共感や理解を深めると同時に、<br>仲間との絆を築きます。
-</h3>
-<h2>加入方法</h2>
-<h3>月額：ين٠<br>加入条件：<a onclick="parent.location.href='poo.html'">TAMAMU</a>を愛していること<br>階級：四級・三級・準二級・二級・準一級・一級・初段の七段階に別れる</h3>
-<h2></h2>
-<input id="word" type="text"></input><input type="button" onClick="getlevel()">←質問等</input>
+}, 3);'>&#43457;&#68409;駄魔無腐ー&#68409;&#43458;</a>
+<br>
+<a href='javascript: setTimeout(function() {
+var win = window.open();
+win.document.body.style.margin = "0";
+win.document.body.style.height = "100vh";
+var iframe = win.document.createElement("iframe");
+iframe.style.border = "none";
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.margin = "0";
+iframe.referrerpolicy = "no-referrer";
+iframe.allowFullscreen = true;
+iframe.src = "https://bing.com".toString();
+win.document.body.appendChild(iframe);
+}, 3);'>検索</a>
+<br>
+<a href='javascript:(function(){let url=prompt("proxyサイトのURLを入力してください");setTimeout(function(){var win=window.open();win.document.body.style.margin="0";win.document.body.style.height="100vh";var iframe=win.document.createElement("iframe");iframe.style.border="none";iframe.style.width="100%";iframe.style.height="100%";iframe.style.margin="0";iframe.referrerpolicy="no-referrer";iframe.allowFullscreen=true;iframe.src=url.toString();win.document.body.appendChild(iframe);},3);})();
+'>about</a>
+<br>
+<a href='javascript: setTimeout(function() {
+var win = window.open();
+win.document.body.style.margin = "0";
+win.document.body.style.height = "100vh";
+var iframe = win.document.createElement("iframe");
+iframe.style.border = "none";
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.margin = "0";
+iframe.referrerpolicy = "no-referrer";
+iframe.allowFullscreen = true;
+iframe.src = "https://tamamu.poo.li/f794b385603345b98766ccfeae3fa103/_rhsuSpl0://s-m.WGwwWl0.0bw/".toString();
+win.document.body.appendChild(iframe);
+}, 3);'>YouTube</a>
+<br>
+<a href=/js.txt</a>
+ここをクリック</a>
+<input id="word" type="text" value="Command"></input><input type="button" onClick="getlevel()">←質問等</input>
 <div id="info">
 </body>
 </html>
