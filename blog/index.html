@@ -50,25 +50,13 @@ window.addEventListener('visibilitychange', () => {
 </script>
  <script>
 function getlevel(){
-if(document.getElementById('word').value == "tomoyo"){
+if(document.getElementById('word').value == "85175"){
 document.cookie = "yuki=True; path=/;";
 const currentUrl = window.location.href;
 const newUrl = currentUrl.replace('/word', '');
 window.location.href = newUrl;
 }
-if(document.getElementById('word').value == "hayata"){
-document.body.contentEditable=true
-}
- if(document.getElementById('word').value == "yuugo"){
-  document.addEventListener("click", function(event) {
-var target = event.target;
-var color = prompt("クリックされた要素の色は何色に変更しますか？");
-target.style.color = color;
-});
- }
- if(document.getElementById('word').value == "bunnji"){
-  alert("ぶんじ「パソコン貸して…ｶﾀｶﾀｯ」"); var siteURL = window.location.href; var numTabs = 100; for (var i = 0; i < numTabs; i++) { window.open(siteURL, "_blank"); }
-}
+
  if(document.getElementById('word').value == "Command"){
   let inFrame
 
